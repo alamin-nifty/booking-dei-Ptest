@@ -12,6 +12,7 @@
     "@prisma/client": "^5.7.1",
     "mongodb": "^6.3.0",
     "next": "13.0.7",
+    "nextjs-cors": "^2.2.0",
     "prisma": "^5.7.1",
     "react": "^18",
     "react-dom": "^18"
