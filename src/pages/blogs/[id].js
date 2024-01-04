@@ -11,7 +11,7 @@ const SingleBlog = ({ blog }) => {
 };
 
 export async function getStaticPaths() {
-  //   const res = await fetch("http://localhost:3000/api/blogs");
+  //   const res = await fetch("https://booking-dei-ptest.vercel.app/api/blogs");
   //   const { blogs } = await res.json();
 
   //   const paths = blogs.map((blog) => ({
@@ -22,7 +22,9 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const res = await fetch(`http://localhost:3000/api/blogs/${params.id}`);
+  const res = await fetch(
+    `https://booking-dei-ptest.vercel.app/api/blogs/${params.id}`
+  );
   const blog = await res.json();
 
   if (!blog) {

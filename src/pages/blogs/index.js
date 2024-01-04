@@ -8,7 +8,7 @@ const index = () => {
 
   useEffect(() => {
     fetch(
-      `http://localhost:3000/api/blogs?page=${currentPage}&limit=${blogsPerPage}`
+      `https://booking-dei-ptest.vercel.app/api/blogs?page=${currentPage}&limit=${blogsPerPage}`
     )
       .then((res) => res.json())
       .then((data) => {
